@@ -3,5 +3,5 @@
     <dimen name="size_image">128dp</dimen>
     <dimen name="size_image2">256dp</dimen>
     <dimen name="size_image3">384dp</dimen>
-    <dimen name="size_star">12dp</dimen>
+    <dimen name="size_icon">26dp</dimen>
 </resources>
