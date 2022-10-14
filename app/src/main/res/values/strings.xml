@@ -1,7 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">PMDM 2022</string>
     <string name="title">Titulo: El pueblo de Ávila más visitado por los madrileños</string>
     <string name="fecha">30/09/2022</string>
     <string name="contenido">Descripción: El Barco de Ávila es el pueblo más visitado de Ávila (Castilla y León) por los habitantes de Madrid, según un estudio.</string>
+    <string name="sitio">Fruteria General Ricardos </string>
+    <string name="rate">2,7 |</string>
+    <string name="distancia">4 km</string>
+    <string name="precio1">2,99€</string>
+    <string name="cantidad">3 disponible(s)</string>
+    <string name="recogida">Recogida hoy: 8:00-23:59</string>
 
+
+    <string name="form_label_name">Nombre</string>
+    <string name="form_label_surname">Apellidos</string>
+    <string name="form_label_save">Guardar</string>
 </resources>
