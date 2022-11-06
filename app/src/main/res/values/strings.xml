@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PMDM 2022</string>
+    <string name="title">Titulo: El pueblo de Ávila más visitado por los madrileños</string>
+    <string name="fecha">30/09/2022</string>
+    <string name="contenido">Descripción: El Barco de Ávila es el pueblo más visitado de Ávila (Castilla y León) por los habitantes de Madrid, según un estudio.</string>
+
 </resources>
