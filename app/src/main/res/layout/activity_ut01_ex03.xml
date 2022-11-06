@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconSpain"
+        android:layout_width="@dimen/size_image3"
+        android:layout_height="@dimen/size_image"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_spain"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_margin="2dp"
+        android:layout_below="@+id/iconSpain"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contenido"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_margin="2dp"
+        android:layout_below="@+id/title"/>
+    <LinearLayout
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:layout_below="@+id/desc">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_star"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_star"
+            android:layout_margin="5dp"
+            android:tint="@color/white"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_star2"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_star"
+            android:layout_margin="5dp"
+            android:tint="@color/white"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_star3"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_star"
+            android:layout_margin="5dp"
+            android:tint="@color/white"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_star4"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_star"
+            android:layout_margin="5dp"
+            android:tint="@color/white"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_star5"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_star"
+            android:layout_margin="5dp"
+            android:tint="@color/white"/>
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/desc"
+            android:layout_toEndOf="@+id/stars"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/share"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_share"
+                android:tint="@color/white"
+                android:layout_margin="5dp"    />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fav"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_favorite"
+                android:tint="@color/red"
+                android:layout_margin="5dp"    />
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+<!--
+<TextView
+android:id="@+id/text1"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="Texto 1" />
+
+<TextView
+android:id="@+id/text2"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/text1"
+android:layout_width="wrap_content"
+android:text="Texto 2" />
+
+<TextView
+android:id="@+id/text3"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/text2"
+android:layout_width="wrap_content"
+android:text="Texto 3" />
+
+<TextView
+android:id="@+id/text3.1"
+android:layout_below="@+id/text3"
+android:layout_height="wrap_content"
+android:layout_toEndOf="@+id/text2"
+android:layout_width="wrap_content"
+android:text="Texto 3.1" />
+
+<TextView
+android:id="@+id/text3.2"
+android:layout_below="@+id/text3.1"
+android:layout_height="wrap_content"
+android:layout_toEndOf="@+id/text2"
+android:layout_width="wrap_content"
+android:text="Texto 3.2" />
+
+<TextView
+android:id="@+id/text4"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/text3"
+android:layout_width="wrap_content"
+android:text="Texto 4" />
+
+<TextView
+android:id="@+id/text4.1"
+android:layout_below="@+id/text4"
+android:layout_height="wrap_content"
+android:layout_toEndOf="@+id/text3"
+android:layout_width="wrap_content"
+android:text="Texto 4.1" />
+
+<TextView
+android:id="@+id/text4.2"
+android:layout_below="@+id/text4"
+android:layout_height="wrap_content"
+android:layout_toEndOf="@+id/text4.1"
+android:layout_width="wrap_content"
+android:text="Texto 4.2" />
+
+<TextView
+android:id="@+id/text5"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/text4.2"
+android:layout_width="wrap_content"
+android:text="Texto 5" />
+-->

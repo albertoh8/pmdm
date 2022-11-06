@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Ut01.Ex04.Ut01Ex04ToGoodToGo_Activity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para Recoger ahora"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+    <RelativeLayout
+        android:id="@+id/caja"
+        android:layout_width="@dimen/size_image3"
+        android:layout_height="@dimen/size_image2"
+        android:layout_below="@id/title"
+        tools:background="@tools:sample/avatars">
+
+        <RelativeLayout
+            android:id="@+id/layArriba"
+            android:layout_width="@dimen/size_image3"
+            android:layout_height="@dimen/size_image">
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_favorite"
+                android:paddingTop="6dp"
+                android:paddingRight="6dp"
+                android:tint="@color/white"/>
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="@dimen/size_icon2"
+                android:layout_height="@dimen/size_icon2"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_radio"
+                android:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:text="@string/cantidad"
+                android:background="@color/yellow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/sitio"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layAbajo"
+            android:layout_width="@dimen/size_image3"
+            android:layout_height="@dimen/size_image"
+            android:layout_below="@+id/layArriba"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pack Sorpresa"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto1"
+                android:text="@string/recogida"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/imagen1"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:layout_below="@+id/texto2"
+                android:tint="@color/yellow"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                app:srcCompat="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/texto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto2"
+                android:layout_toRightOf="@+id/imagen1"
+                android:paddingTop="5dp"
+                android:text="@string/rate"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/texto4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto2"
+                android:layout_toRightOf="@+id/texto3"
+                android:paddingTop="5dp"
+                android:text="@string/distancia"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texto2"
+                android:layout_alignParentEnd="true"
+                android:text="@string/precio1"
+                android:paddingTop="5dp"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
